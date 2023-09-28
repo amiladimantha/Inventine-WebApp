@@ -1,0 +1,171 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* Design */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fcfcfc;
+}
+
+body {
+    color: #272727;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    padding: 0;
+}
+
+.content{
+    margin: 100px;
+}
+.container {
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 5px #435d80;
+    padding: 40px;
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+
+* {box-sizing:border-box}
+
+
+
+
+
+.column-1 {
+    margin-right: 150px;
+    flex-shrink: 0; /* shrinks to 0 to apply 70% width*/
+    flex-basis: 50%; /* sets initial width to 70%*/
+}
+
+
+@media only screen and (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        justify-self: center;
+    }
+}
+
+.container .column-2 img{
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 5px #435d80;
+}
+
+h1{
+    color: #0097E6;
+    font-size:36px;
+    margin-bottom:16px;
+}
+
+.paragraph{
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    max-width: 485px;
+
+}
+
+
+
+
+
+.main{
+
+    max-width: 100%;
+    margin-left:28px;
+    margin-right:28px;
+}
+
+
+
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cards_item {
+    display: flex;
+    padding: 1rem;
+}
+
+.social {
+    margin: 5px 0 12px 0;
+    text-align: center;
+    display: block;
+    font-size: 20pt;
+}
+
+.social i {
+    cursor: pointer;
+    color:#fff;
+    margin: 0 15px;
+}
+
+@media (min-width: 640px) {
+    .cards_item {
+        width: 50%;
+    }
+}
+
+@media (min-width: 896px) {
+    .cards_item {
+        width: 33.3333%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .cards_item {
+        width: 25%;
+    }
+}
+
+.card {
+    background-color: black;
+    border-radius: 2rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card_content {
+    height: 100%;
+    padding: 1rem;
+    background: linear-gradient(to bottom left, grey 50%, black 100%);
+}
+
+.card_title {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0px;
+}
+
+.card_text {
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+}

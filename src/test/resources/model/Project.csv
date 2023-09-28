@@ -1,0 +1,2 @@
+ project_id,  creator_id,  support_team_id,  created_at,  financial_status,  status,  requested_amount,  date_of_expiry ,project_name, description, category,
+3, 5, 1, 2020-09-29 00:00:00.0, C, A, 60000, 2000-06-25 06:00:00.0,"Neonz Boomerang/Disk","something..example", "technology"

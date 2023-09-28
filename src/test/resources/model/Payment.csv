@@ -1,0 +1,2 @@
+payment_id,  project_id,  investor_id,  financial_details_id,  amount,  created_at
+6, 60, 1, 1, 20000 , 2020-09-29 00:00:00.0

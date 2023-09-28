@@ -1,0 +1,126 @@
+.container {
+  max-width: 70%;
+  width: 100%;
+  margin-right: 10%;
+  margin-left: 20%;
+  margin-top: 150px;
+  background-color: #fff;
+  padding: 10%;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* form start */
+
+.content .details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px 0 12px 0;
+}
+
+.content .details > div {
+  flex: 1 1 auto;
+}
+
+.form .tab .title {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #12263a;
+}
+
+.form .details .input-box {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.input-box span.details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #0097e6;
+}
+.details select,
+.input-box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  border-color: #0097e6;
+}
+
+.details select {
+  background-color: #ccc;
+}
+
+.input-inbox .input_field_checkbox_option {
+  padding-top: 10px;
+}
+
+.form .button {
+  height: 45px;
+  margin-left: 20%;
+}
+.form .button input {
+  height: 100%;
+  width: 70%;
+  border-radius: 25px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #0097e6;
+}
+.form .button input:hover {
+  /* transform: scale(0.99); */
+  background: #0183c9;
+}
+
+button {
+  background-color: #0097e6;
+  border-radius: 10px;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#cancelBtn {
+  background-color: #bbbbbb;
+  margin-right: 10px;
+}
+
+/* This is the style of our error messages */
+.error {
+  width: 100%;
+  padding: 0;
+
+  font-size: 80%;
+  color: white;
+  border-radius: 0 0 5px 5px;
+
+  box-sizing: border-box;
+}
+
+.error.active {
+  padding: 0.3em;
+}
+
+/* form end */

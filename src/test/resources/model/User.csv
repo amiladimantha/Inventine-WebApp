@@ -1,0 +1,2 @@
+ id, firstName, lastName, dob, gender, phone, address, district, type, created_at, header_id
+ 1,  invent, tine, 2020-09-29 00:00:00.0, M, +94771234567, "Reid Avenue, Colombo 07", Colombo, A, 2020-09-29 00:00:00.0, 1640618091700

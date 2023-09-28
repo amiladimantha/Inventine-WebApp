@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    line-height: 1.5;
+}
+
+.project-content {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+.card-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    padding-top:30px;
+}
+img {
+    width: 100%;
+    display: block;
+}
+.img-display {
+    overflow: hidden;
+    border-radius: 10px;
+}
+.img-showcase {
+    display: flex;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+.img-showcase img {
+    min-width: 100%;
+}
+.img-select {
+    display: flex;
+}
+.img-item {
+    margin: 0.3rem;
+}
+.img-item:nth-child(1),
+.img-item:nth-child(2),
+.img-item:nth-child(3) {
+    margin-right: 0;
+}
+.img-item:hover {
+    opacity: 0.8;
+}
+.project-content {
+    padding: 2rem 1rem;
+}
+.project-title {
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    position: relative;
+    color: #12263a;
+    margin: 1rem 0;
+}
+.project-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 80px;
+    background: #12263a;
+}
+
+/* Category and Rating */
+.cat-rate {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+
+.project-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    background: #0097e6;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    transition: all 0.5s ease;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+}
+.project-link:hover {
+    color: #0097e6;
+    background-color: #fff;
+}
+.project-rating {
+    color: #0097e6;
+    margin-left: auto;
+}
+.project-rating span {
+    font-weight: 600;
+    color: #252525;
+}
+.project-price {
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.project-price span {
+    font-weight: 400;
+}
+.project-detail h2 {
+    text-transform: capitalize;
+    color: #12263a;
+    padding-bottom: 0.6rem;
+}
+.project-detail p {
+    font-size: 0.9rem;
+    padding: 0.3rem;
+    opacity: 0.8;
+}
+.project-detail ul {
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+
+/* Float four columns side by side */
+.project-detail .column {
+    float: left;
+    width: 33%;
+    padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.project-detail .row {
+    margin: 0 -5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Clear floats after the columns */
+.project-detail .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the counter cards */
+.project-detail .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.project-detail .card .title {
+    font-size: 16px;
+    color: #808080;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.project-detail .card .count {
+    font-size: 24px;
+    color: #0097e6;
+    padding: 10px;
+}
+
+/* Progress info*/
+
+.progress-info {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+    color: #808080;
+}
+
+/* Progress Bar */
+progress {
+    border-radius: 7px;
+    width: 100%;
+    height: 20px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    margin-right: 10px;
+}
+progress::-webkit-progress-bar {
+    background-color: #fff;
+    border-radius: 7px;
+}
+progress::-webkit-progress-value {
+    background-color: #0097e6;
+    border-radius: 7px;
+}
+
+/* invest */
+.invest-info {
+    margin-top: 2rem;
+    align-items: center;
+}
+.invest-info input,
+.invest-info .btn {
+    border: 1.5px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0.45rem 0.8rem;
+    outline: 0;
+    margin-right: 0.2rem;
+    margin-bottom: 1rem;
+    height: 50px;
+    font-size: 15px;
+    width: 50%;
+}
+.invest-info input {
+    width: 40%;
+}
+.invest-info .btn {
+    cursor: pointer;
+    color: #fff;
+    background: #0097e6;
+}
+
+.invest-info .btn:hover {
+    background: #fff;
+    color: #0097e6;
+    border-width: thin;
+    border-color: #0097e6;
+}
+
+/* Creator */
+
+.creator-info {
+    display: flex;
+    align-items: center;
+    color: #12263a;
+}
+
+.creator-img img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 20px;
+    vertical-align: middle;
+    border: 5px solid #0097e6;
+}
+
+.creator-link a:hover {
+    cursor: pointer;
+    color: #0097e6;
+}
+
+/* Share Project */
+
+.share {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.social-links {
+    display: flex;
+    margin-left: auto;
+}
+
+.social-links i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    color: #0097e6;
+    border: 1px solid #0097e6;
+    margin: 0 0.2rem;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: all 0.5s ease;
+}
+.social-links i:hover {
+    background: #0097e6;
+    border-color: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Project Tabs */
+
+.right {
+    margin: 0 17% 0;
+    margin-top: 50px;
+    background-color: #fff;
+    overflow-y: scroll;
+    max-height: 800px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 10px 10px 10px 10px;
+}
+.right::-webkit-scrollbar {
+    display: none;
+}
+.right {
+    scrollbar-width: none;
+}
+
+.tabs {
+    margin-bottom: 2px;
+}
+.tablink {
+    background-color: #0097e6;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: rgb(7, 7, 7);
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+.tabcontent h3 {
+    padding: 20px 50px;
+}
+
+.tabcontent p {
+    padding: 20px 50px;
+}
+
+.tabcontent .dt-img {
+    padding: 20px 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+@media screen and (min-width: 992px) {
+    .project-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+    }
+    .card-wrapper {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .project-imgs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 16px;
+        border-radius: 10px;
+        background-color: #f1f1f1;
+    }
+    .project-content {
+        padding-top: 0;
+    }
+
+    .project-detail .card {
+        min-width: 100px;
+    }
+}

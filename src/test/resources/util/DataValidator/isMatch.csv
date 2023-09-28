@@ -1,0 +1,3 @@
+txt,pattern,expected
+fsdfUGYHH5456456,a-zA-Z0-9,true
+fsdfUGYHH5456456,a-zA-Z,false

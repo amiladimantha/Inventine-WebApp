@@ -1,0 +1,2 @@
+competition_Id,organization_Id,support_Team_Id,created_At,ending_at,  prize_money,rules,c_type, p_type,competition_name,header_Id, staring_At,over_view, status
+   50, 60, 1,2022-03-20 08:11:21.00,2022-05-20 16:33:56,10000,only3memberparticipate, H, A,HackX,12614,2022-03-20 16:33:56,nokiawillcontactthecompetition,A

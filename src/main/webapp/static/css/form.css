@@ -1,0 +1,158 @@
+.container {
+  max-width: 70%;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 150px;
+  background-color: #fff;
+  padding: 100px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* form start */
+
+.content .details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px 0 12px 0;
+}
+
+.content .details > div {
+  flex: 1 1 auto;
+}
+
+form .tab .title {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #12263a;
+}
+
+form .details .input-box {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.input-box span.details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #0097e6;
+}
+.details select,
+.input-box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  border-color: #0097e6;
+  margin-bottom: 20px;
+}
+
+.input-inbox .input_field_checkbox_option {
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+form .button {
+  height: 45px;
+  margin-left: 20%;
+}
+form .button input {
+  height: 100%;
+  width: 70%;
+  border-radius: 25px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #0097e6;
+}
+form .button input:hover {
+  /* transform: scale(0.99); */
+  background: #0183c9;
+}
+
+/* Mark input boxes that gets an error on validation: */
+form .details .tab .invalid {
+  border-color: #f50d0d;
+}
+
+/* Hide all steps by default: */
+form .details .tab {
+  display: none;
+}
+
+button {
+  background-color: #0097e6;
+  border-radius: 10px;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #bbbbbb;
+  margin-right: 10px;
+}
+
+/* Navigation Indicators */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #0097e6;
+}
+
+/* form end */
+
+/* responsive */
+@media (min-width: 100px) {
+  .main-overview  { grid-template-columns: repeat(1, 1fr); }
+}
+
+@media (min-width: 650px) {
+  .main-overview  { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1050px) {
+  .main-overview  { grid-template-columns: repeat(3, 1fr); }
+  .main-cards {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 1300px) {
+  .main-overview  { grid-template-columns: repeat(4, 1fr); }
+}
